@@ -1,0 +1,15 @@
+@(questions:String, form: Form[(String)])(implicit flash: Flash)
+<html>
+	<body>
+		<h2>Questions place</h2>
+		<div>@questions</div>
+		@helper.form(routes.Application.addquestion) {
+		
+		New question:
+		<input type="text" name="newQuestion">
+		
+		
+		<input type="submit" id="addquestbutton" value="Add">
+		}
+	</body>
+</html>

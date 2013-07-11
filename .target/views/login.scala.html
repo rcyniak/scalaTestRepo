@@ -1,0 +1,17 @@
+@(form: Form[(String,String)])(implicit flash: Flash)
+<html>
+	<body>
+		<h2>Sign in</h2>
+		
+		@helper.form(routes.Auth.authenticate) {
+		
+		Login:
+		<input type="email" name="email">
+		
+		Password:
+		<input type="password"  name="password">
+		
+		<input type="submit" id="loginbutton" value="Go">
+		}
+	</body>
+</html>

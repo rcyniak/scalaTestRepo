@@ -1,0 +1,11 @@
+@(message: String)
+
+<html>
+	<body>
+		<h2>Welcome @message</h2>
+		
+		@helper.form(routes.Auth.logout) {
+		<input type="submit" id="loginbutton" value="Log out">
+		}
+	</body>
+</html>
